@@ -1,0 +1,47 @@
+{
+  "openevalz_version": 1,
+  "eval": {
+    "id": "apps",
+    "slug": "apps",
+    "title": "APPS: Automated Programming Progress Standard",
+    "group": "Coding",
+    "tags": [],
+    "source": "core"
+  },
+  "upstream": {
+    "repo": "https://github.com/UKGovernmentBEIS/inspect_evals",
+    "path": "src/inspect_evals/apps",
+    "inspect_ai": "0.3.260",
+    "eval_version": "2-A",
+    "dependency": ""
+  },
+  "execution": {
+    "class": "sandbox-local",
+    "cost_class": "high",
+    "sandbox": [
+      "scorer"
+    ],
+    "requires_internet": false,
+    "fast": false,
+    "supports_k8s": false,
+    "environment": ""
+  },
+  "tasks": [
+    {
+      "name": "apps",
+      "samples": 5000
+    }
+  ],
+  "total_samples": 5000,
+  "external_assets": [
+    {
+      "type": "huggingface",
+      "source": "codeparrot/apps",
+      "state": "pinned"
+    }
+  ],
+  "scaffolds": [
+    "baseline"
+  ],
+  "generated": "2026-08-25"
+}
